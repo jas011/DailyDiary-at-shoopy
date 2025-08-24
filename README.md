@@ -1,82 +1,89 @@
 # Shoopy Internship – Daily Diary  
 **Duration:** 21 June 2025 – 17 July 2025  
 **Excluding Saturdays & Sundays**  
-**Project:** Converting Catalogue (HBS → PDF)  
+**Project:** Converting Catalogue (HBS → PDF) + Template Selection Modal  
 
 ---
 
 ## Week 1
 
 ### 23 June (Monday)  
-Today was my first proper working day at Shoopy. I got introduced to the project and the task assigned to me – converting product catalogues written in **HBS (Handlebars templates)** into **PDFs**. I spent most of the day setting up my development environment and going through the existing catalogue structure to understand how everything is linked together.  
+First day of real work! I got introduced to the catalogue-to-PDF project. The task was to convert **HBS (Handlebars templates)** into **PDFs**. I spent most of today setting up the dev environment and going through how catalogues were structured.  
 
 ### 24 June (Tuesday)  
-I explored HBS templates in more detail today. I went through how they are structured and how data is injected into them. I also installed the necessary tools and libraries that could help me convert HBS into HTML, which I would later transform into PDF.  
+Explored HBS templates in detail. Understood how product data is injected into them and how I could render them into HTML. Installed supporting libraries for the conversion pipeline.  
 
 ### 25 June (Wednesday)  
-I experimented with some sample templates and tried converting them into HTML. Once I had some basic output, I moved forward to generating PDFs from that HTML. The first few tries were rough – styling was all over the place – but it was a good start.  
+Started experimenting with rendering HBS into HTML. Managed to get some raw HTML output. From there, I tried generating PDFs. The layout was messy, but it felt like a small milestone.  
 
 ### 26 June (Thursday)  
-Big breakthrough today! I managed to set up a working prototype for HBS → HTML → PDF conversion. However, there were still many formatting issues, especially with CSS not rendering correctly in PDFs. Spent quite a bit of time debugging fonts and layouts.  
+Made good progress — set up the first working **HBS → HTML → PDF pipeline**. CSS wasn’t rendering properly yet, so most of the day went into debugging fonts and layouts.  
 
 ### 27 June (Friday)  
-I focused on improving the design of the generated PDFs. Fixed issues with fonts, spacing, and images. By the end of the day, I had a cleaner-looking PDF that was much closer to what a real catalogue should look like. Felt good seeing proper output for the first time!  
+Focused on design cleanup. Worked on making the generated PDF look closer to a real product catalogue. Fixed fonts, spacing, and images. By evening, the PDF was starting to look like something real.  
 
 ---
 
 ## Week 2
 
 ### 30 June (Monday)  
-Started working on adding **dynamic data** into the templates instead of just static content. The goal was to generate catalogues that adapt to product data. Successfully pulled some test data and confirmed it rendered correctly in the final PDF.  
+Started adding **dynamic product data** into the templates. Got a few test catalogues generated successfully. This was the first time I saw real product data come through in the PDFs.  
 
 ### 1 July (Tuesday)  
-Learned how to handle **multi-page PDFs**. Up until now, catalogues would break after one page, but today I managed to get proper pagination working. Tested with larger product data – lots of debugging but it worked.  
+Tackled the issue of **multi-page PDFs**. Previously, content would just cut off after one page. Implemented pagination and tested with bigger data — worked after a lot of trial and error.  
 
 ### 2 July (Wednesday)  
-Worked on adding headers and footers into the PDF for branding. Experimented with company logo placement, page numbers, and contact details. The first versions didn’t align properly, but later in the day, I got a neat header-footer working.  
+Added **headers and footers** with branding elements like logos and page numbers. Alignment was tricky at first, but I figured it out.  
 
 ### 3 July (Thursday)  
-Most of today went into cleaning up the design – fixing alignment issues, spacing, and making sure the content didn’t break between pages. I also learned a few tricks to control page breaks in HTML before conversion.  
+Polished layouts. Fixed issues like content breaking across pages. Learned how to manage page-break CSS effectively.  
 
 ### 4 July (Friday)  
-Wrapped up the week by finalizing a more polished version of the pipeline. I documented what was done so far – how HBS is rendered, how CSS is applied, and how the final PDF is generated. The progress feels solid now.  
+Documented the work so far. Pipeline was now stable enough for regular usage. Ended the week with a cleaner, more reliable PDF generation system.  
 
 ---
 
 ## Week 3
 
 ### 7 July (Monday)  
-I noticed that generating PDFs for larger catalogues was a bit slow. Today I worked on **optimizing performance**, trimming down unnecessary assets and reducing the load time. The PDFs were noticeably faster to generate by the end of the day.  
+Worked on **performance optimization**. Large catalogues were slow, so I cut down on extra assets and improved load speed.  
 
 ### 8 July (Tuesday)  
-I added **error handling** for cases where product data might be missing or corrupted. Instead of the pipeline breaking, the system now shows a fallback message or skips problematic entries. This made the process much more stable.  
+Added **error handling**. If product data was missing or invalid, the system now showed fallbacks instead of crashing.  
 
 ### 9 July (Wednesday)  
-Today’s focus was on enabling an easy way for users to **download the generated PDFs directly**. I tested the download functionality across different browsers to make sure it worked consistently.  
+Enabled **direct download of generated PDFs** in the browser. Tested across multiple browsers.  
 
 ### 10 July (Thursday)  
-I spent time on styling again – making sure the PDF output looked consistent with the original catalogue design. This included fixing small CSS bugs like margins, fonts, and table borders.  
+Refined styling once again — margins, fonts, and spacing for a more professional look.  
 
 ### 11 July (Friday)  
-I tested the system with **real Shoopy catalogue data** today. Found a few bugs with long product descriptions spilling over, but fixed them quickly. The output now looked like an actual ready-to-share product catalogue.  
+Tested with **real Shoopy catalogue data**. Fixed issues with long product descriptions overflowing. By the end, the catalogue PDFs looked production-ready.  
 
 ---
 
 ## Week 4
 
 ### 14 July (Monday)  
-I started working on supporting **multiple catalogue formats**. Some catalogues had different layouts, so I had to make sure the pipeline could handle variations. It was tricky but interesting.  
+Started working on **multiple catalogue layouts**. Some catalogues needed different formats, so I made the system more flexible.  
 
 ### 15 July (Tuesday)  
-Improved the CSS once again, this time focusing on making the layout lighter and more optimized for PDF rendering. Also fixed a few alignment problems reported by the team.  
+Built a **React modal** where users can select a template (Crisp, Sleek, Lumen) before exporting the PDF. This made the system more interactive.  
 
 ### 16 July (Wednesday)  
-Today was mainly about **testing and validation**. I tested the pipeline with several sample catalogues and shared the PDFs with the team for review. Minor feedback was noted, which I’ll finalize tomorrow.  
+Collaborated with the **design team**. They shared Figma designs for catalogue templates, and I integrated them into the export workflow. Tested the modal with different layouts.  
 
 ### 17 July (Thursday)  
-My last day on this task! I completed all documentation for the **HBS → PDF workflow**, including setup steps, troubleshooting, and usage notes. Shared the final deliverables with the team. Felt good to see the whole process working end to end.  
+Final day! Completed documentation for the whole **HBS → PDF system** and the new **template selection modal**. Shared the final deliverables with the team. Felt proud seeing the system come together from scratch.  
 
 ---
 
 ## Final Reflection
-Working on this project taught me a lot about **templating, HTML-to-PDF rendering, CSS debugging, and performance optimization**. It was challenging at times, but also very rewarding. By the end, I was able to create a reliable system that can generate well-formatted, dynamic PDF catalogues from HBS templates – something I’m proud of contributing during my time at Shoopy.
+This internship gave me real-world experience in **web-to-PDF rendering, UI development in React, and collaboration with a design team**.  
+
+Key achievements:  
+- Built an **HBS → HTML → PDF pipeline** with styling, pagination, and error handling.  
+- Developed a **React modal** for template selection (Crisp, Sleek, Lumen).  
+- Integrated **Figma designs from the design team** into the final output.  
+- Optimized performance and tested with real catalogue data.  
+- Documented everything for future use by the Shoopy team.  
